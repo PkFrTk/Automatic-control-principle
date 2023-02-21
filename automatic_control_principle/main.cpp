@@ -20,9 +20,9 @@ public:
 	void setParameters1()
 	{
 		cout << "请输入频率wn，超调量σ:" << endl;
-		cout << "频率wn:";
+		cout << "频率wn: ";
 		cin >> wn;
-		cout << "超调量σ(100%):";
+		cout << "超调量σ(100%): ";
 		cin >> overshoot;
 	}
 	void selectCalculateMode()
