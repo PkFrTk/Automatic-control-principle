@@ -1,2 +1,16 @@
 ﻿  main.cpp
-  automatic_control_principle.vcxproj -> D:\GitHub\Automatic control principle\automatic_control_principle\Debug\automatic_control_principle.exe
+D:\GitHub\Automatic control principle\automatic_control_principle\main.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\GitHub\Automatic control principle\automatic_control_principle\main.cpp(31,11): error C2001: 常量中有换行符
+D:\GitHub\Automatic control principle\automatic_control_principle\main.cpp(52,11): error C2001: 常量中有换行符
+D:\GitHub\Automatic control principle\automatic_control_principle\main.cpp(32,3): error C2146: 语法错误: 缺少“;”(在标识符“cout”的前面)
+D:\GitHub\Automatic control principle\automatic_control_principle\main.cpp(53,3): error C2146: 语法错误: 缺少“;”(在标识符“cout”的前面)
+D:\GitHub\Automatic control principle\automatic_control_principle\main.cpp(76,54): error C2001: 常量中有换行符
+D:\GitHub\Automatic control principle\automatic_control_principle\main.cpp(77,2): error C2146: 语法错误: 缺少“;”(在标识符“cout”的前面)
+D:\GitHub\Automatic control principle\automatic_control_principle\main.cpp(77,56): error C2001: 常量中有换行符
+D:\GitHub\Automatic control principle\automatic_control_principle\main.cpp(78,2): error C2146: 语法错误: 缺少“;”(在标识符“cout”的前面)
+D:\GitHub\Automatic control principle\automatic_control_principle\main.cpp(78,10): error C2001: 常量中有换行符
+D:\GitHub\Automatic control principle\automatic_control_principle\main.cpp(79,2): error C2146: 语法错误: 缺少“;”(在标识符“cout”的前面)
+D:\GitHub\Automatic control principle\automatic_control_principle\main.cpp(79,59): error C2001: 常量中有换行符
+D:\GitHub\Automatic control principle\automatic_control_principle\main.cpp(80,2): error C2146: 语法错误: 缺少“;”(在标识符“cout”的前面)
+D:\GitHub\Automatic control principle\automatic_control_principle\main.cpp(80,10): error C2001: 常量中有换行符
+D:\GitHub\Automatic control principle\automatic_control_principle\main.cpp(81,2): error C2146: 语法错误: 缺少“;”(在标识符“cout”的前面)
