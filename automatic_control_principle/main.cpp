@@ -19,18 +19,18 @@ public:
 	// Menber Function
 	void setParameters1()
 	{
-		cout << "è¯·è¾“å…¥é¢‘çŽ‡Ï‰nï¼Œè¶…è°ƒé‡Ïƒ:" << endl;
-		cout << "é¢‘çŽ‡Ï‰n:";
+		cout << "ÇëÊäÈëÆµÂÊwn£¬³¬µ÷Á¿¦Ò:" << endl;
+		cout << "ÆµÂÊwn:";
 		cin >> wn;
-		cout << "è¶…è°ƒé‡Ïƒ(100%):";
+		cout << "³¬µ÷Á¿¦Ò(100%):";
 		cin >> overshoot;
 	}
 	void selectCalculateMode()
 	{
 		int select;
-		cout << "è¯·é€‰æ‹©è®¡ç®—æ¨¡å¼ï¼š" << endl;
-		cout << "1.å·²çŸ¥äºŒé˜¶ç³»ç»Ÿçš„è¶…è°ƒé‡Ïƒï¼Œé¢‘çŽ‡Ï‰n" << endl;
-		cout << "2.å·²çŸ¥äºŒé˜¶ç³»ç»Ÿçš„é¢‘çŽ‡wn/Ïˆ" << endl;
+		cout << "ÇëÑ¡Ôñ¼ÆËãÄ£Ê½£º" << endl;
+		cout << "1.ÒÑÖª¶þ½×ÏµÍ³µÄ³¬µ÷Á¿¦Ò£¬ÆµÂÊ¦Øn" << endl;
+		cout << "2.ÒÑÖª¶þ½×ÏµÍ³µÄÆµÂÊwn/¦×" << endl;
 		cin >> select;
 		if (select == 1)
 		{ // second order system's dynamic indicators known
@@ -49,8 +49,8 @@ public:
 		zeta = sqrt(zeta_square);
 		rise_time = (PI - phi) / (wn * sqrt(1 - pow(zeta, 2)));
 		peak_time = PI / (wn * sqrt(1 - pow(zeta, 2)));
-		cout << "è°ƒèŠ‚æ—¶é—´è¯¯å·®èŒƒå›´ä¸º2%ï¼Ÿ5%ï¼Ÿ" << endl;
-		cout << "Î”=";
+		cout << "µ÷½ÚÊ±¼äÎó²î·¶Î§Îª2%£¿5%£¿" << endl;
+		cout << "¦¤=" << endl;
 		cin >> deta;
 		if (deta == 5)
 		{
@@ -63,8 +63,8 @@ public:
 		number_of_oscillations = (adjusting_time * wn * sqrt(1 - pow(zeta, 2))) / (2 * PI);
 	}
 	void printResult();
-	double calculateAllInOne(double wn, double phi, double zeta, double deta);
-	double incalculateAllInOne(double overshoot, double peak_time);
+	void calculateAllInOne(double wn, double phi, double zeta, double deta);
+	void incalculateAllInOne(double overshoot, double peak_time);
 
 private:
 	double wn, phi, zeta, deta;
@@ -73,14 +73,14 @@ private:
 void Dynamic_Indicators::printResult()
 {
 	cout << "-----------------------" << endl;
-	cout << "ä¸Šå‡æ—¶é—´trï¼š" << rise_time << "s" << endl;
-	cout << "å³°å€¼æ—¶é—´tpï¼š" << peak_time << "s" << endl;
-	cout << "è¶…è°ƒé‡Ïƒ(100%)ï¼š" << overshoot * 100.00 << endl;
-	cout << "è°ƒèŠ‚æ—¶é—´tsï¼š" << adjusting_time << "s" << endl;
-	cout << "æŒ¯è¡æ¬¡æ•°Nï¼š" << number_of_oscillations << endl;
+	cout << "ÉÏÉýÊ±¼ätr£º" << rise_time << "s" << endl;
+	cout << "·åÖµÊ±¼ätp£º" << peak_time << "s" << endl;
+	cout << "³¬µ÷Á¿¦Ò(100%)£º" << overshoot * 100.00 << "%" << endl;
+	cout << "µ÷½ÚÊ±¼äts£º" << adjusting_time << "s" << endl;
+	cout << "Õñµ´´ÎÊýN£º" << number_of_oscillations << endl;
 	cout << "-----------------------" << endl;
 }
-double Dynamic_Indicators::calculateAllInOne(double wn, double phi, double zeta, double deta)
+void Dynamic_Indicators::calculateAllInOne(double wn, double phi, double zeta, double deta)
 {
 	rise_time = (PI - phi) / (wn * sqrt(1 - pow(zeta, 2)));
 	peak_time = PI / (wn * sqrt(1 - pow(zeta, 2)));
@@ -95,7 +95,7 @@ double Dynamic_Indicators::calculateAllInOne(double wn, double phi, double zeta,
 	}
 	number_of_oscillations = (adjusting_time * wn * sqrt(1 - pow(zeta, 2))) / (2 * PI);
 }
-double Dynamic_Indicators::incalculateAllInOne(double overshoot, double peak_time)
+void Dynamic_Indicators::incalculateAllInOne(double overshoot, double peak_time)
 {
 	double zeta_square;
 	zeta_square = pow(log(1 / overshoot), 2) / (pow(PI, 2) + pow(log(1 / overshoot), 2));
