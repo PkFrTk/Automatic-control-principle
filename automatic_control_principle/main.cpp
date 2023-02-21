@@ -50,9 +50,9 @@ public:
 	}
 	void incalculate(double overshoot, double peak_time){
 		double zeta_square;
-		zeta_square = pow(log(1/overshoot),2)/(pow(PI,2)+pow(log(1/overshoot),2));
+		zeta_square = pow(log(1 / overshoot), 2) / (pow(PI, 2) + pow(log(1 / overshoot), 2));
 		zeta = sqrt(zeta_square);
-		wn = (PI)/(peak_time*sqrt(1-zeta_square));
+		wn = (PI) / (peak_time * sqrt(1 - zeta_square));
 		phi = acos(zeta);
 	}
 private:
