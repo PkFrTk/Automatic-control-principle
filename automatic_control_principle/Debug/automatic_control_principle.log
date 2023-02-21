@@ -1,2 +1,3 @@
 ﻿  main.cpp
-  automatic_control_principle.vcxproj -> D:\GitHub\Automatic control principle\automatic_control_principle\Debug\automatic_control_principle.exe
+D:\GitHub\Automatic control principle\automatic_control_principle\main.cpp(109,21): error C2512: “Dynamic_Indicators”: 没有合适的默认构造函数可用
+D:\GitHub\Automatic control principle\automatic_control_principle\main.cpp(5,7): message : 参见“Dynamic_Indicators”的声明
