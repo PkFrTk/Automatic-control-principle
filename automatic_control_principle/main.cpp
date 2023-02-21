@@ -28,7 +28,7 @@ public:
 
 		}
 	}
-	void printParameters(){
+	void print(){
 		std::cout << "请输入频率wn，" << std::endl;
 	}
 	void setParameters(double _wn, double _phi, double _zeta, double _deta) {
