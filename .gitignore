@@ -1,9 +1,9 @@
 # folder
 .vs/
-.vscode
-.idea
-.lightly
-Debug
+.vscode/
+.idea/
+.lightly/
+Debug/
 
 # file
 *.exe
